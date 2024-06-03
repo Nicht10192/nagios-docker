@@ -93,9 +93,8 @@ Para acceder a Nagios desde el navegador web:
 
 1. **Abre tu navegador web**.
 
-2. **Ve a la dirección** `http://localhost:9090/nagios/`.
+2. **Ve a la dirección** `http://localhost:80/nagios/`.
 
 3. **Credenciales de Usuario**:
    - **Usuario**: nagiosadmin
    - **Contraseña**: nagiosadmin
-
