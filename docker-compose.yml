@@ -1,9 +1,11 @@
+version: '3.8'
+
 services:
   nagios:
     build: .
     container_name: nagios-core
     ports:
-      - "80:80"  # Cambia "9090:80" a "80:80"
+      - "80:80"
     volumes:
       - nagios-config:/usr/local/nagios/etc
       - nagios-plugins:/usr/local/nagios/libexec
@@ -11,4 +13,8 @@ services:
       - NAGIOSADMIN_USER=nagiosadmin
       - NAGIOSADMIN_PASS=nagiosadmin
     entrypoint: ["/entrypoint.sh"]
+
+volumes:
+  nagios-config:
+  nagios-plugins:
 
