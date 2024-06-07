@@ -1,4 +1,6 @@
-# Instalación de Docker y Docker Compose en Ubuntu
+# Instalación Nagios Core utilizando Docker
+
+# Estos pasos estan pensados para ser utilizados en entorno Ubuntu.
 
 ## Instalar Docker
 
