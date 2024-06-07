@@ -63,6 +63,9 @@ RUN a2enmod rewrite && \
 # Configurar Apache para Nagios
 RUN htpasswd -cb /usr/local/nagios/etc/htpasswd.users nagiosadmin nagiosadmin
 
+# Modificar el archivo de configuración de Apache para permitir el acceso desde la IP del contenedor
+RUN sed -i 's/Require local/Require all granted/g' /usr/local/nagios/etc/httpd.conf
+
 # Exponer puertos necesarios
 EXPOSE 80
 
